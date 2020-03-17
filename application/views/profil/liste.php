@@ -24,5 +24,6 @@
         </tr>
         <?php } ?>
     </table>
+    <p><a href="<?php echo base_url('profil/ajout'); ?>">Ajouter un nouveau profil</a></p>
 </body>
 </html>

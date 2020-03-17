@@ -9,6 +9,11 @@
             $this->db->insert("profil",$data);
         }
 
+        public function selectById($idProfil){
+            $this->db->where("idProfil",$idProfil);
+            return $this->db->get("profil")->result();
+        }
+
         public function liste(){
             $data = $this->db->get("profil")->result();
             return $data;
